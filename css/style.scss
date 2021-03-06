@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import 'header';
+@import 'about';
+@import 'skills';
+@import 'projects';
+@import 'footer';
+@import 'mobile';
+
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: #d8e5fa;
+  overflow-x: hidden;
+  margin: 0;
+  transition: 0.4s ease all;
+  &.dark{
+    background-color: #102a55;
+  }
+}
+
+%container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+%flex-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

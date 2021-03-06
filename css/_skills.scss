@@ -1,0 +1,42 @@
+.skills{
+    min-height: 60vh;
+    .container{
+      @extend %container;
+      h2{
+        color: #173b74;
+      }
+      .skills-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        div{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin: 1.5rem 2rem 1.5rem 0;
+          i{
+            font-size: 5rem;
+          }
+          h4{
+            font-weight: 500;
+            margin-top: 0.75rem;
+            color: #173b74;
+        }
+      }
+    }
+  }
+  &.dark{
+    .container{
+      h2{
+        color: #bccef1;
+      }
+      .skills-container{
+        div{
+          h4{
+            color: #bccef1;
+         }
+       }
+     }
+   }
+ }
+}
